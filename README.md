@@ -1,4 +1,4 @@
-# 🧮 MY CALCY
+# 1. 🧮 MY CALCY
 
 A feature-packed command-line scientific calculator built in Python — handles everything from basic arithmetic to trigonometry, logarithms, and factorials, all from your terminal.
 
@@ -81,5 +81,73 @@ While building this, I ran into (and fixed) a few real bugs — worth documentin
 - Using Fraction to display irrational angle results in a human-readable way
 
 ## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+
+
+
+# 2. Task Manager (CLI)
+
+A simple command-line task manager built in Python. Add tasks, assign a priority level, and get them back as a clean, sorted table — most urgent first. Built as a beginner project to explore core scheduling concepts similar to how operating systems prioritize jobs.
+
+## Features
+
+- Add multiple tasks interactively from the terminal
+- Assign each task a priority: `1` (High), `2` (Medium), `3` (Low)
+- Automatically sorts tasks by priority using **pandas**
+- Displays results in a clean grid table using **tabulate**
+- Handles invalid input and early exit (`done`) gracefully
+
+## Tech Stack
+
+- Python 3
+- pandas
+- tabulate
+
+## How to Run
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/task-manager.git
+   cd task-manager
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install pandas tabulate
+   ```
+
+3. Run the program:
+   ```bash
+   python task_manager.py
+   ```
+
+4. Follow the prompts:
+   - Enter a task name
+   - Enter a priority (`1`, `2`, or `3`)
+   - Type `yes` to add another task, or `done` to finish
+
+## Example Output
+
+```
+Welcome to the Task Manager
+Enter task you want to add:
+Enter Tasks: task_1
+Enter Level of Priority: 1 for High, 2 for Medium, 3 for Low: 2
+Do you want to add more tasks? if yes just write yes OR type 'done' to exit: yes
+Enter Tasks: Task_2
+Enter Level of Priority: 1 for High, 2 for Medium, 3 for Low: 1
+Do you want to add more tasks? if yes just write yes OR type 'done' to exit: done
+
++--------+------------+
+| Jobs   |   Priority |
++========+============+
+| Task_2 |          1 |
++--------+------------+
+| task_1 |          2 |
++--------+------------+
+```
+## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
